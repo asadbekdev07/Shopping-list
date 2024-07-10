@@ -4,7 +4,7 @@ class ShoppingAddForm extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			title: "",
+			title: "Buy",
 			number: ""
 		}
 	}
@@ -20,7 +20,12 @@ class ShoppingAddForm extends React.Component {
 			title: this.state.title,
 			number: this.state.number
 		}
-		console.log(data);
+
+		if(!data.number.length || !data.title.length) {
+			alert("All field should be completed")
+		} else {
+			this.props.onAdd(data);
+		}
 	}
 
 	render() {
