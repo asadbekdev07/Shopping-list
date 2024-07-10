@@ -213,6 +213,17 @@
 	color: #000;
 }
 
+.search {
+	border-radius: 5px;
+	background-color: rgba(255, 255, 255, 0.6);
+	height: 45px;
+	outline: none;
+	border: none;
+	padding: 0 10px;
+	margin-top: 15px;
+	width: 100%; 
+}
+
 /* MEDIA  */
 @media only screen and (min-width: 800px) {
 	.wrapper {
